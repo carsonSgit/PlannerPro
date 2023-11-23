@@ -20,3 +20,25 @@ C:\Users\cs\Desktop\Files\F23\JobPrep\Portfolio_Items\20221222233913_Xurson_PROJ
 C:\Users\cs\Desktop\Files\F23\JobPrep\Portfolio_Items\20221222233913_Xurson_PROJECT (1)\FINALPROJ\Xurson\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.dll
 C:\Users\cs\Desktop\Files\F23\JobPrep\Portfolio_Items\20221222233913_Xurson_PROJECT (1)\FINALPROJ\Xurson\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.pdb
 C:\Users\cs\Desktop\Files\F23\JobPrep\Portfolio_Items\20221222233913_Xurson_PROJECT (1)\FINALPROJ\Xurson\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.genruntimeconfig.cache
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\bin\Debug\netcoreapp3.1\TODOApp.exe
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\bin\Debug\netcoreapp3.1\TODOApp.deps.json
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\bin\Debug\netcoreapp3.1\TODOApp.runtimeconfig.json
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\bin\Debug\netcoreapp3.1\TODOApp.runtimeconfig.dev.json
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\bin\Debug\netcoreapp3.1\TODOApp.dll
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\bin\Debug\netcoreapp3.1\TODOApp.pdb
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.csproj.AssemblyReference.cache
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\GenerateReport.g.cs
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp_MarkupCompile.cache
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp_MarkupCompile.lref
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\GenerateReport.baml
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.g.resources
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.AssemblyInfoInputs.cache
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.AssemblyInfo.cs
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.csproj.CoreCompileInputs.cache
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.dll
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.pdb
+C:\Users\cs\Documents\GitHub\PlannerPro\TODOApp\obj\Debug\netcoreapp3.1\TODOApp.genruntimeconfig.cache

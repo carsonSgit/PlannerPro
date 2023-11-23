@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cs\\Desktop\\Files\\F23\\JobPrep\\Portfolio_Items\\20221222233913_Xurson_PROJECT (1)\\FINALPROJ\\Xurson\\TODOApp\\TODOApp.csproj",
+      "projectUniqueName": "C:\\Users\\cs\\Documents\\GitHub\\PlannerPro\\TODOApp\\TODOApp.csproj",
       "projectName": "TODOApp",
-      "projectPath": "C:\\Users\\cs\\Desktop\\Files\\F23\\JobPrep\\Portfolio_Items\\20221222233913_Xurson_PROJECT (1)\\FINALPROJ\\Xurson\\TODOApp\\TODOApp.csproj",
+      "projectPath": "C:\\Users\\cs\\Documents\\GitHub\\PlannerPro\\TODOApp\\TODOApp.csproj",
       "packagesPath": "C:\\Users\\cs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cs\\Desktop\\Files\\F23\\JobPrep\\Portfolio_Items\\20221222233913_Xurson_PROJECT (1)\\FINALPROJ\\Xurson\\TODOApp\\obj\\",
+      "outputPath": "C:\\Users\\cs\\Documents\\GitHub\\PlannerPro\\TODOApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cs\\AppData\\Roaming\\NuGet\\NuGet.Config",
