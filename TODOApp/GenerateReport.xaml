@@ -1,0 +1,20 @@
+﻿<Window x:Class="TODOApp.GenerateReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TODOApp"
+        mc:Ignorable="d"
+        Title="GenerateReport" SizeToContent="WidthAndHeight">
+    <Grid>
+        <ListView Width="auto" Margin="5" x:Name="liv_tasks" MinHeight="360" MaxHeight="360">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Task Name" Width="90" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Due Date" Width="90" DisplayMemberBinding="{Binding DueDate, StringFormat={}{0:dd MMMM yyyy}}"></GridViewColumn>
+                    <GridViewColumn Header="Notes" Width="90" DisplayMemberBinding="{Binding Notes}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

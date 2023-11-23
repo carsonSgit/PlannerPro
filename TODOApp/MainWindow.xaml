@@ -1,0 +1,127 @@
+﻿<Window x:Class="TODOApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TODOApp"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="PlannerPro" SizeToContent="WidthAndHeight" MinWidth="900">
+    <Grid>
+        <!-- Split the window into 2 parts, going by roughly 2:1 ratio -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!-- Borders -->
+        <Border Grid.Column="0" BorderThickness="1" BorderBrush="Gray" Margin="5,5,0,5"></Border>
+        <Border Grid.Column="1" BorderThickness="1" BorderBrush="Gray" Margin="0,5,5,5"></Border>
+
+        <!-- Tasks Window -->
+        <GroupBox Background="LightSteelBlue" Grid.Column="0" Margin="10" BorderBrush="Gray" BorderThickness="1">
+            <GroupBox.Header>
+                <Bold FontSize="15">Tasks</Bold>
+            </GroupBox.Header>
+            <StackPanel>
+                <!-- Display of tasks in list view -->
+                <ListView MaxHeight="360" MinHeight="360" Width="auto" Margin="5" x:Name="liv_tasks">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Task Name" Width="120" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                            <GridViewColumn Header="Due Date" Width="120" DisplayMemberBinding="{Binding DueDate, StringFormat={}{0:dd MMMM yyyy}}"></GridViewColumn>
+                            <GridViewColumn Header="Notes" Width="120" DisplayMemberBinding="{Binding Notes}"></GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <!-- Buttons for: sort, save load -->
+                <Border BorderBrush="Gray" BorderThickness="1" Margin="5">
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Cursor="Hand" Grid.Column="0" Content="Sort" Margin="5" Click="btn_sort_Click"></Button>
+                        <Button Cursor="Hand" Grid.Column="1" Content="Save" Margin="5" Click="btn_save_Click"></Button>
+                        <Button Cursor="Hand" Grid.Column="2" Content="Load" Margin="5" Click="btn_load_Click"></Button>
+                    </Grid>
+                </Border>
+
+                <!-- Buttons for generating report -->
+                <GroupBox BorderBrush="Gray" BorderThickness="1" Margin="5, 0, 5, 5">
+                    <GroupBox.Header>Generate Report</GroupBox.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <!-- Button: Generate Report (for tasks due today) -->
+                        <Button Cursor="Hand" Grid.Column="0" Content="Due Today" Margin="5" Click="btn_dueToday_Click"></Button>
+
+                        <!-- Button: Generate Report (for overdue tasks) -->
+                        <Button Cursor="Hand" Grid.Column="1" Content="Overdue" Margin="5" Click="btn_overdue_Click"></Button>
+                    </Grid>
+                </GroupBox>
+
+            </StackPanel>
+
+
+
+
+        </GroupBox>
+
+        <!-- Add Task Window -->
+        <GroupBox Background="AliceBlue" Grid.Column="1" BorderBrush="Gray" BorderThickness="1" Margin="10" Width="auto">
+            <GroupBox.Header>
+                <Bold FontSize="15">Add Task</Bold>
+            </GroupBox.Header>
+
+
+
+            <!-- Establish 2x3 Grid for user input -->
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="36*"/>
+                    <ColumnDefinition Width="41*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!-- Adding Task Name -->
+                <Label Content="Task Name:" FontWeight="Bold" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" FontSize="14"/>
+                <TextBox Grid.Column="1" Grid.Row="0" Margin="5,5,5,5" Width="auto" Text="Input task name..." x:Name="txb_taskName" />
+
+                <!-- Adding Due Date -->
+                <Label Content="Due Date:" Grid.Row="1" FontWeight="Bold" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" FontSize="14"/>
+                <DatePicker Grid.Column="1" Grid.Row="1" Margin="5,5,5,5" Width="auto" x:Name="dtp_dueDate" SelectedDate="{x:Static sys:DateTime.Now}"></DatePicker>
+
+                <!-- Adding Notes -->
+                <Label Content="Notes:" Grid.Row="2" FontWeight="Bold" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" FontSize="14"/>
+                <TextBox Grid.Column="1" Grid.Row="2" Margin="5,5,5,5" Width="auto" MinWidth="360" MinHeight="350" Text="Input task notes..." x:Name="txb_notes" TextWrapping="Wrap"/>
+
+                <!-- Grid for buttons -->
+                <Grid Grid.Column="1" Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Buttons: Create & Remove -->
+                    <Button Cursor="Hand" Grid.Column="0" Grid.Row="0" Content="Add Task" Margin="5" Click="btn_addTask_Click"></Button>
+                    <Button Cursor="Hand" Grid.Column="1" Grid.Row="0" Content="Erase Content" Margin="5" Click="btn_eraseContent_Click"></Button>
+                </Grid>
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>
