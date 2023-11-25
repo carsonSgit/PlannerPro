@@ -67,7 +67,7 @@ For this straightforward project, we implemented two classes:
 
 # Screenshots
 
-If you would like a more detailed version, here is an imgur with some more screenshots: https://imgur.com/a/0uMokn2
+If you would like a more detailed version, here is an [imgur](https://imgur.com/a/0uMokn2) with some more screenshots
 
 ## Default Screen
 
