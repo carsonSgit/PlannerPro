@@ -65,3 +65,59 @@ For this straightforward project, we implemented two classes:
 2. **Task Class**
    - Allows users to create planned tasks with constructors for various cases: task name only, task name and due date, or name, due date, and note. This class facilitates all desired functionalities in the program.
 
+# Screenshots
+
+If you would like a more detailed version, here is an imgur with some more screenshots: https://imgur.com/a/0uMokn2
+
+## Default Screen
+
+Landing page.
+
+![defaultScreen](https://github.com/carsonSgit/PlannerPro/assets/92652800/724c36dc-0a69-4f53-a4a2-2c192d37c3c1)
+
+## Filled-in Task
+
+All fields function as needed. 
+
+![filledInTask](https://github.com/carsonSgit/PlannerPro/assets/92652800/51b80b0f-e9ef-41c9-b630-bff203851f4a)
+
+## Save Tasks
+
+For here, we save the data in the current task list in a CSV file.
+
+![clickSave](https://github.com/carsonSgit/PlannerPro/assets/92652800/b4eeceb2-b8cd-460f-a255-687a797453a7)
+
+![saveFileExplorer](https://github.com/carsonSgit/PlannerPro/assets/92652800/58e57023-3983-4c5a-9d70-3c440c379958)
+
+## Load Tasks
+
+To load a task list, we simple click the Load button and it prompts us to select a saved CSV.
+
+![clickLoad](https://github.com/carsonSgit/PlannerPro/assets/92652800/ad1b17c6-9bcc-433a-b3b0-ace9ce16a4e7)
+
+![selectLoadExplorer](https://github.com/carsonSgit/PlannerPro/assets/92652800/fe08f69b-e92d-411f-b5ca-9dfd39d41d2d)
+
+
+## Due Today Report
+
+Click on the Due Today button to display a report of tasks due today.
+
+### If there are tasks due today, we display this report
+![dueToday](https://github.com/carsonSgit/PlannerPro/assets/92652800/53e42f75-985f-4537-b9c9-f19efc7d3f4e)
+
+### If there are none, we see this
+![nothingDueToday](https://github.com/carsonSgit/PlannerPro/assets/92652800/1c23db33-9702-4896-9916-771599b9dbc2)
+
+## Overdue Report
+
+Click on the Overdue button to display a report of tasks that have passed the due date
+
+### If there are tasks that are Overduee, we display this report
+![overDueTask](https://github.com/carsonSgit/PlannerPro/assets/92652800/466b73c7-c1c8-4abc-9e49-b6a669cdc606)
+
+### If we have no overdue tasks, we see this
+![nothingOverdue](https://github.com/carsonSgit/PlannerPro/assets/92652800/6173ef3b-784e-4fc7-a143-92875ad06613)
+
+
+
+
